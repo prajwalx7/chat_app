@@ -1,7 +1,7 @@
 import 'package:chat_app/screens/chat_list/view/chat_list_screen.dart';
-import 'package:chat_app/screens/group_list_screen.dart';
-import 'package:chat_app/screens/profile_screen.dart';
-import 'package:chat_app/screens/settings_screen.dart';
+import 'package:chat_app/screens/group_list/group_list_screen.dart';
+import 'package:chat_app/screens/profile/profile_screen.dart';
+import 'package:chat_app/screens/settings/settings_screen.dart';
 import 'package:flutter/material.dart';
 
 class RightPanel extends StatelessWidget {

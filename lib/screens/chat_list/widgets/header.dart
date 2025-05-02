@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 class Header extends StatelessWidget {
@@ -5,6 +6,7 @@ class Header extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final user = FirebaseAuth.instance.currentUser;
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Row(
@@ -13,7 +15,7 @@ class Header extends StatelessWidget {
           SizedBox(width: 8),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: [Text("Good morning"), Text("Prajwal")],
+            children: [Text("Good morning"), Text(user!.displayName!)],
           ),
           Spacer(),
           Container(
